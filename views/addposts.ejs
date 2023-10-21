@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1 class="title">add a new post</h1>
+    <form action="/admin" method="post" class="postform">
+      <div class="inputfield">
+        <label for="title">Enter title</label>
+        <input type="text" name="title" id="title">
+      </div>
+   <div class="inputfield">
+    <label for="description">Enter title</label>
+    <textarea name="description" id="description" cols="30" rows="10"></textarea>
+   </div>
+  <div class="formbtn">
+    <button class="postbutton">add post</button>
+    <a href="/">home</a>
+  </div>
+    </form>
+    <%- include("./include/foot") %>

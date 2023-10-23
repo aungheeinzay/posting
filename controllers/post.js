@@ -28,7 +28,7 @@ exports.homepage = (req,res)=>{
 };
 exports.getpost = (req,res)=>{
 const postId =req.params.post_Id;
-console.log(postId);
+console.log("sdjfsfdj",postId);
 Posts.getSinglePost(postId).then(([row])=> {
 res.render("detail", {post: row});
 })
